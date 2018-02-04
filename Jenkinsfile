@@ -6,7 +6,7 @@ node {
       mvnHome = tool 'LOCAL_MAVEN'
 	  version = '2.3.5' 
    }
-   stage('Buildd') {
+   stage('Build build') {
         withMaven(
         maven: 'LOCAL_MAVEN', // Maven installation declared in the Jenkins "Global Tool Configuration"
         mavenSettingsConfig: 'settings.xml', // Maven settings.xml file defined with the Jenkins Config File Provider Plugin
